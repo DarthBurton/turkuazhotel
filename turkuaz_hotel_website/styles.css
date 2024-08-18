@@ -1,0 +1,222 @@
+/* General Body and HTML styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+    background-color: #40E0D0; /* Turquoise theme color */
+    color: white;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Fixed height for uniform appearance */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* Adds depth with a shadow */
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+    margin-right: auto; /* Keeps the logo on the left */
+}
+
+/* Navigation styling */
+nav {
+    margin-left: 100px; /* Corrects the navigation balance towards the center */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-link {
+    padding: 10px 15px;
+    margin: 0 10px; /* Adjusts spacing between links */
+    background-color: #2ABAB0; /* Lighter shade of the theme color for contrast */
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav .nav-link:hover {
+    background-color: #1A7971; /* Darker shade on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Full-screen photo styling */
+.full-screen-photo {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main content area styling */
+.main-content {
+    padding-top: 80px; /* Adds space between the photo and additional content */
+}
+
+/* Feature section styling */
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: #E0FEFE; /* Light turquoise background */
+    border: 2px solid #B2DFDB; /* Slightly darker turquoise border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 50px;
+}
+
+.feature:hover {
+    transform: scale(1.02); /* Slightly enlarges the feature box on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.feature-text {
+    width: 50%;
+    padding-right: 20px; /* Adds spacing between text and image */
+}
+
+.feature-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 50px; /* Optional style */
+    margin-left: 200px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #40E0D0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px; /* Uniform height */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.25); /* Shadow for depth */
+    z-index: 500;
+    margin-top: 50px;
+}
+
+/* Container for services, rooms, and gallery */
+.room-container, .service-container, .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: flex-start; /* Ensures that items align at their top edge */
+}
+
+/* Card styles for services, rooms, and galleries */
+.room-card, .service-card, .gallery-item {
+    background-color: #E0FEFE; /* Light turquoise background */
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%; /* Adjusts card width for layout */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.room-card img, .service-card img, .gallery-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover;
+}
+
+.room-info, .service-info {
+    padding: 15px;
+}
+
+/* Hover effects for cards */
+.room-card:hover, .service-card:hover, .gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
+
+/* Contact layout styling */
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-info {
+    background-color: #E0FEFE; /* Light turquoise background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+
+.location-image {
+    width: 50%;
+}
+
+.location-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Restaurant Cards Styling */
+.restaurant-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.restaurant-card {
+    background-color: #E0FEFE; /* Light turquoise background */
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%; /* Nearly full width for more emphasis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    display: flex;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.02); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.restaurant-info {
+    padding: 20px;
+}
+
+.footer-contact {
+    background-color: #40E0D0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px; /* Uniform height */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.25); /* Shadow for depth */
+    z-index: 500;
+    margin-top: 50px;
+}
